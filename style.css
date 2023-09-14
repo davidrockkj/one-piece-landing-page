@@ -15,10 +15,16 @@
 }
 
 :root {
-    --bg-clr-onepiece: #003B5B;
+    --bg-clr-onepiece: #002C71;
     --transparente: rgba(82, 79, 79, 0.28);
     --forms: #F8B980;
     --txt-clr: white;
+    --verde1: #435E64;
+    --verde2: #203C41;
+    --azul1: #0146B4;
+    --azul2: #002054;
+    --azul3: #001230;
+
 }
 
 h1 {
@@ -32,7 +38,7 @@ body {
     width: 100vw;
     height: 100vh;
     color: var(--txt-clr);
-    /* overflow: hidden; */
+    overflow-x: hidden;
 }
 
 .container {
@@ -45,7 +51,7 @@ body {
         flex-direction: column;
         position: relative;
         width: 100%;
-        height: 100%;
+        height: 886px;
         padding: 0px 56px;
         background-image: url("assets/desktop/hero\ 1.png");
         background-size: cover;
@@ -126,10 +132,10 @@ body {
                 border: 4px solid var(--forms);
             }
 
-            .main-head button{
+            button {
+                width: 346px;
                 height: 63px;
                 border-radius: 15px;
-                background-color: var(--forms);
                 outline: none;
                 border: none;
 
@@ -139,7 +145,11 @@ body {
                 color: var(--txt-clr);
             }
 
-            .main-head button:hover{
+            .main-head #btn-assinar {
+                background-color: var(--forms);
+            }
+
+            .main-head #btn-assinar:hover{
                 background-color: #B06A2C;
             }
 
@@ -151,4 +161,204 @@ body {
                 display: flex;
                 justify-content: space-around;
                 padding: 0 45px;
+            }
+
+    
+    .main {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        padding: 0 56px;
+    }
+    
+    .historia {
+        display: flex;
+        position: relative;
+        width: 100%;
+        height: 235px;
+        margin-top: 60px;
+        /* background-color: var(--azul2); */
+        background-color: #ED4B03;
+        }
+
+        .historia aside.texto {
+            width: 100%;
+            height: 100%;
+            padding: 20px 585px 20px 20px;
+            text-overflow: ellipsis;
+        }
+
+        h2 {
+            font-size: 40px;
+            font-family: 'Bebas_Neue_Pro_Regular';
+            letter-spacing: 4px;
+        }
+
+        .historia h5 {
+            font-size: 17px;
+            font-weight: 400;
+            font-family: 'Roboto';
+            overflow-y: auto;
+            height: 130px;
+            flex-wrap: wrap;
+        }
+
+        .historia h5::-webkit-scrollbar { 
+            display: none;
+        }
+
+        .historia aside img {
+            position: absolute;
+            top: -260px;
+            right: 0;
+        }
+
+    
+    .personagens {
+        width: 100%;
+        height: 713px;
+        display: flex;
+        justify-content: space-around;
+        padding: 232px 56px 0;
+    }
+
+        .personagens .character {
+            display: flex;
+            justify-content: center;
+            align-items: end;
+            width: 288px;
+            height: 481px;
+        }
+
+        .personagens .character:nth-child(1) {
+            background-color: var(--azul1);
+        }
+        
+        .personagens .character img {
+            position: absolute;
+                top: 1350px;
+            }
+            
+            .personagens .character:nth-child(1) img {
+                width: 290px;
+            }
+
+        .personagens .character:nth-child(2) {
+            background-color: var(--azul2);
+        }
+
+        .personagens .character:nth-child(3) {
+            background-color: var(--azul3);
+        }
+
+
+    .galeria {
+        width: 100%;
+        height: 100%;
+        text-align: center;
+        margin-top: 100px;
+        /* padding: 0 116px; */
+        position: relative;
+        overflow: hidden;
+    }
+
+        .galeria .wallpaper {
+            display: flex;
+            position: relative;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+            height: max-content;
+            overflow: hidden;
+        }
+
+            .galeria h2 {
+                width: 100%;
+                height: 68px;
+                /* padding-bottom: 20px; */
+            }
+
+            .galeria .wallpaper img {
+                width: 90%;
+                max-height: 697.5px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                vertical-align: middle;
+                /* padding-top: 20px; */
+            }
+
+            .prev, .next {
+                cursor: pointer;
+                /* position: absolute; */
+                /* top: 34%; */
+                width: 5%;
+                height: 200px;
+                padding: 5px;
+                padding-top: 80px;
+                /* margin-top: -22px; */
+                transition: 0.6s ease;
+                /* border-radius: 110px; */
+                user-select: none;
+
+                color: white;
+                font-weight: bold;
+                font-size: 30px;
+            }
+
+            .prev:hover, .next:hover {
+                background-color: rgba(0,0,0,0.8);
+            }
+
+            .prev {
+                /* left: 45px; */
+                border-radius: 5px 0 0 5px;
+            }
+
+            .next {
+                /* right: 45px; */
+                border-radius: 0 5px 5px 0;
+            }
+
+    .zoro-sola {
+        width: 90%;
+        height: 602px;
+        padding: auto;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+        /* padding: 0px 300px; */
+        background-color: black;
+        margin: 50px 0px 0 0;
+    }
+
+        .zoro-sola .zoro {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-around;
+            align-items: center;
+            width: 100%;
+            height: 100%;
+            background-color: var(--azul1);
+        }
+
+            .zoro img {
+                width: 40%;
+            }
+
+            
+            .zoro button#btn-sortear {
+                background-color: var(--azul2)!important;
+            }
+
+            .zoro button#btn-sortear:hover {
+                background-color: var(--azul3)!important;
+            }
+
+            .zoro button:focus{
+                background-color: var(--azul3)!important;
             }
