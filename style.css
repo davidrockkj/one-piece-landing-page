@@ -1,0 +1,154 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Roboto:wght@100;400;700&display=swap');
+
+@font-face {
+    font-family: Bebas_Neue_Pro_Regular;
+    src: url(assets/font/Bebas_Neue_Pro_Regular.otf);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Bebas Neue', sans-serif;
+    font-family: 'Roboto', sans-serif;;
+}
+
+:root {
+    --bg-clr-onepiece: #003B5B;
+    --transparente: rgba(82, 79, 79, 0.28);
+    --forms: #F8B980;
+    --txt-clr: white;
+}
+
+h1 {
+    font-size: 64px;
+    font-family: 'Bebas_Neue_Pro_Regular';
+    letter-spacing: 4px;
+}
+
+body {
+    background-color: var(--bg-clr-onepiece);
+    width: 100vw;
+    height: 100vh;
+    color: var(--txt-clr);
+    /* overflow: hidden; */
+}
+
+.container {
+    width: 100%;
+    height: 100%;
+}
+
+    .head {
+        display: flex;
+        flex-direction: column;
+        position: relative;
+        width: 100%;
+        height: 100%;
+        padding: 0px 56px;
+        background-image: url("assets/desktop/hero\ 1.png");
+        background-size: cover;
+
+    }
+
+        .header {
+            display: flex;
+            position: relative;
+            width: 100%;
+            height: 81px;
+            margin-top: 10px;
+            border-radius: 5px;
+
+            background-image: url("assets/desktop/One-Piece-Logo 1.png");
+            background-repeat: no-repeat;
+            background-position: 35px;
+            background-color: var(--transparente);
+            backdrop-filter: blur(2px);
+        }
+
+        .main-head {
+            display: flex;
+            flex-direction: column;
+            position: relative;
+            justify-content: space-around;
+            text-align: center;
+            /* align-items: center; */
+            width: 458px;
+            height: 558px;
+            margin-top: 135px;
+            padding: 5px 56px 30px 56px;
+            border-radius: 8px;
+            background-color: var(--transparente);
+            backdrop-filter: blur(25px);
+        }
+
+            .main-head hr {
+                border: 2px solid var(--forms);
+                border-radius: 10px;
+                margin: 0 0px;
+
+            }
+
+                .main-head .info {
+                    width: 350px;
+                }
+
+                .main-head h5 {
+                    text-align: center;
+                    /* width: 110%;
+                    height: 100px; */
+                    font-size: 20px;
+                    font-family: 'Roboto';
+                    font-weight: 300;
+                }
+
+            .main-head label {
+                display: flex;
+                justify-content: center;
+                width: 100%;
+            }
+
+            .main-head input#email {
+                width: 100%;
+                height: 50px;
+                border-radius: 5px;
+                border: 4px solid white;
+                outline: none;
+
+                font-size: 20px;
+                padding: 0px 10px;
+            }
+
+            .main-head input#email:focus {
+                /* border: none; */
+                /* outline: none; */
+                border: 4px solid var(--forms);
+            }
+
+            .main-head button{
+                height: 63px;
+                border-radius: 15px;
+                background-color: var(--forms);
+                outline: none;
+                border: none;
+
+                font-size: 35px;
+                font-family: 'Roboto';
+                font-weight: 700;
+                color: var(--txt-clr);
+            }
+
+            .main-head button:hover{
+                background-color: #B06A2C;
+            }
+
+            .main-head button:focus{
+                background-color: #B06A2C;
+            }
+
+            .main-head label {
+                display: flex;
+                justify-content: space-around;
+                padding: 0 45px;
+            }
