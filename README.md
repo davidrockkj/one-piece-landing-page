@@ -17,7 +17,7 @@
 
 ### The Challenge
 
-- Newsletter submit form
+- edit submit form
 - See a success message with their email after successfully submitting the form
 - See form validation messages if:
   - The field is left empty
@@ -32,9 +32,9 @@
 ### Screenshot
 
 <p float="left">
-    <img src="./screenshot/desktop1.png" width="200">
-    <img src="./screenshot/table1.png" width="200">
-    <img src="./screenshot/mobile1" width="200">
+    <img src="./prints/desktop1.png" width="200">
+    <img src="./prints/table1.png" width="200">
+    <img src="./prints/mobile1" width="200">
 </p>
 
 
@@ -63,7 +63,7 @@
 
 - Header
     - logo area
-    - newsletter area
+    - edit area
 
 - History
     - floating character
@@ -76,8 +76,8 @@
 
 
 <p float="left">
-    <img src="./screenshot/newsletter1.png" width="200">
-    <img src="./screenshot/newsletter2.png" width="200">
+    <img src="./prints/edit1.png" width="200">
+    <img src="./prints/edit2.png" width="200">
 </p>
 
 ### 2nd Update
@@ -93,10 +93,10 @@
 
 
 <p float="left">
-    <img src="./screenshot/newsletter3.png" width="200">
-    <img src="./screenshot/newsletter4.png" width="200">
-    <img src="./screenshot/newsletter5.png" width="200">
-    <img src="./screenshot/newsletter6.png" width="200">
+    <img src="./prints/edit3.png" width="200">
+    <img src="./prints/edit4.png" width="200">
+    <img src="./prints/edit5.png" width="200">
+    <img src="./prints/edit6.png" width="200">
 </p>
 
 breakpoints:
