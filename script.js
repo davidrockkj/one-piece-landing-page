@@ -49,21 +49,18 @@ let personagem = '';
 
 zoro.addEventListener("click", function() {
     personagem = this.id;
-    console.log("Clicked div ID: " + personagem);
     sumirTrio();
     zoroDesc.classList.remove('hide-char');
 });
 
 luffy.addEventListener("click", function() {
     personagem = this.id;
-    console.log("Clicked div ID: " + personagem);
     sumirTrio();
     luffyDesc.classList.remove('hide-char');
 });
 
 usopp.addEventListener("click", function() {
     personagem = this.id;
-    console.log("Clicked div ID: " + personagem);
     sumirTrio();
     usoppDesc.classList.remove('hide-char');
 });
@@ -72,43 +69,37 @@ usopp.addEventListener("click", function() {
 
 
 let i = 1;
-let pica = 0;
+let iFoto = 0;
 
-function plusSlides(pica) {
-    i += pica;
-    console.log(i);
+function plusSlides(iFoto) {
+    i += iFoto;
 
     if (i === 1) {
         foto1.classList.remove('mySlides');
         foto2.classList.add('mySlides');
         foto3.classList.add('mySlides');
-        console.log(i);
     }
     if (i === 2) {
         foto1.classList.add('mySlides');
         foto2.classList.remove('mySlides');
         foto3.classList.add('mySlides');
-        console.log(i);
     }
     if (i === 3) {
         foto1.classList.add('mySlides');
         foto2.classList.add('mySlides');
         foto3.classList.remove('mySlides');
-        console.log(i);
     }
     if (i < 1){
         i = 3;
         foto1.classList.add('mySlides');
         foto2.classList.add('mySlides');
         foto3.classList.remove('mySlides');
-        console.log(i);
     }
     if (i > 3){
         i = 1;
         foto1.classList.remove('mySlides');
         foto2.classList.add('mySlides');
         foto3.classList.add('mySlides');
-        console.log(i);
     }
 }
 
