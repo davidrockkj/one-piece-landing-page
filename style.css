@@ -230,7 +230,12 @@ body {
             align-items: end;
             width: 288px;
             height: 481px;
+            cursor: pointer;
         }
+
+            .hide-char {
+                display: none!important;
+            }
 
         .personagens .character:nth-child(1) {
             background-color: var(--azul1);
@@ -245,12 +250,68 @@ body {
                 width: 290px;
             }
 
-        .personagens .character:nth-child(2) {
+        .personagens .character#luffy {
             background-color: var(--azul2);
         }
 
-        .personagens .character:nth-child(3) {
+        .personagens .character#usopp {
             background-color: var(--azul3);
+        }
+
+        .personagens .character-solo {
+            flex-direction: row;
+            justify-content: start;
+            width: 100%;
+            display: flex;
+            align-items: first baseline;
+        }
+
+            #zoro-desc {
+                background-color: var(--azul1);
+            }
+
+            #luffy-desc {
+                background-color: var(--azul2);
+            }
+
+            #usopp-desc {
+                background-color: var(--azul3);
+            }
+
+            .character-solo img {
+                width: 290px;
+            }
+
+            .personagens .character-solo .text-person {
+                display: flex;
+                flex-direction: column;
+                width: fit-content;
+                height: 430px!important;
+                padding: 50px 0px 0 300px;
+            }
+
+            .text-person h5 {
+                margin-top: 20px;
+                font-size: 20px;
+                overflow-y: auto;
+            }
+
+            .text-person h5::-webkit-scrollbar { 
+                display: none;
+            }
+
+        .character-solo #fechar {
+            position: relative;
+            top: -40px;
+            width: 56px;
+            height: 100%;
+        }
+
+        .character-solo #fechar img#fechar-btn {
+            position: relative;
+            top: 0;
+            width: 40px!important;
+            cursor: pointer;
         }
 
 
@@ -272,6 +333,14 @@ body {
             align-items: center;
             height: max-content;
             overflow: hidden;
+        }
+
+        /* #foto2, #foto3 {
+            display: none!important;
+        } */
+
+        .mySlides {
+            display: none!important;
         }
 
             .galeria h2 {
@@ -344,10 +413,11 @@ body {
             width: 100%;
             height: 100%;
             background-color: var(--azul1);
+            padding: 0 56px;
         }
 
             .zoro img {
-                width: 40%;
+                width: 500px;
             }
 
             

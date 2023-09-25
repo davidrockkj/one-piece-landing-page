@@ -43,23 +43,72 @@
                     </h5>
                 </aside>
                 <aside>
-                    <img src="assets/desktop/asce 1.png" alt="">
+                    <img src="assets/desktop/asce 1.png" alt="Ace">
                 </aside>
             </section>
 
-            <section class="personagens">
-                <div class="character">
+            <section class="personagens" id="person">
+                <!-- ZORO -->
+                <div class="character" id="zoro">
                     <img src="./assets/desktop/zoro1.png" alt="Zoro">
                     <h2>ZORO</h2>
                 </div>
-                <div class="character">
+
+                <div class="character hide-char character-solo" id="zoro-desc">
+                    <img src="./assets/desktop/zoro2.png" alt="Zoro">
+                    <div class="text-person">
+                        <h2>RORONOA ZORO</h2>
+                        <h5>
+                            Zoro é o espadachim dos Piratas do Chapéu de Palha e um dos amigos mais próximos de Luffy. Ele empunha três espadas, especializando-se em um estilo único de esgrima com três espadas. Zoro é conhecido por sua força incrível, determinação e comprometimento inabalável com seu objetivo de se tornar o maior espadachim do mundo. Ele é frequentemente visto com uma bandana verde cobrindo o olho esquerdo, que esconde uma cicatriz significativa.
+                        </h5>
+                    </div>
+                    <div id="fechar" onclick="fecharDescricao()">
+                        <img id="fechar-btn" src="./assets/desktop/fechar.png" alt="fechar">
+                    </div>
+                </div>
+                <!-- --------------------------------- -->
+
+                <!-- LUFFY -->
+                <div class="character" id="luffy">
                     <img src="./assets/desktop/luffy1.png" alt="Luffy">
                     <h2>LUFFY</h2>
                 </div>
-                <div class="character">
-                    <img src="./assets/desktop/usop1.png" alt="Usop">
-                    <h2>USOP</h2>
+
+                <div class="character hide-char character-solo" id="luffy-desc">
+                    <img src="./assets/desktop/luffy2.png" alt="Luffy">
+                    <div class="text-person">
+                        <h2>Monkey D. Luffy</h2>
+                        <h5>
+                            Luffy é o protagonista principal da série e o capitão dos Piratas do Chapéu de Palha. Ele possui o poder da Fruta Gomu Gomu, que lhe concede habilidades parecidas com borracha. Luffy é conhecido por sua determinação inabalável em se tornar o Rei dos Piratas e por seu senso de justiça simples, porém forte. Ele tem uma personalidade alegre e despreocupada e tem um forte vínculo com seus companheiros de tripulação. O chapéu de palha que ele usa é sua marca registrada e um tesouro pessoal.
+                        </h5>
+                    </div>
+                    <div id="fechar" onclick="fecharDescricao()">
+                        <img id="fechar-btn" src="./assets/desktop/fechar.png" alt="fechar">
+                    </div>
                 </div>
+                <!-- --------------------------------- -->
+                
+                <!-- USOP -->
+                <div class="character" id="usopp">
+                    <img src="./assets/desktop/usop1.png" alt="Usopp">
+                    <h2>USOPP</h2>
+                </div>
+
+                <div class="character hide-char character-solo" id="usopp-desc">
+                    <img src="./assets/desktop/usopp2.png" alt="Usopp">
+                    <div class="text-person">
+                        <h2>USOPP</h2>
+                        <h5>
+                            Usopp é o atirador de elite e contador de histórias da tripulação. Ele é conhecido por suas histórias mirabolantes e talento para exagerar, frequentemente criando narrativas imaginativas sobre suas aventuras. Apesar de sua tendência a inventar histórias, Usopp possui habilidades de atirador notáveis e é um membro leal dos Piratas do Chapéu de Palha. Ele aspira a se tornar um bravo guerreiro do mar, inspirado pelos relatos de seu pai, Yasopp, que é membro dos Piratas do Cabelo Vermelho.
+                        </h5>
+                    </div>
+                    <div id="fechar" onclick="fecharDescricao()">
+                        <img id="fechar-btn" src="./assets/desktop/fechar.png" alt="fechar">
+                    </div>
+                </div>
+                <!-- --------------------------------- -->
+
+
             </section>
 
             
@@ -67,19 +116,23 @@
                 <h2>WALLPAPERS</h2>
                 
                 <!-- Imagem 1 -->
-                <!-- <div class="wallpaper">
+                <div class="wallpaper" id="foto1">
+                    <a class="prev" onclick="plusSlides(-1)">❮</a>
                     <img src="./assets/desktop/wallpaper1.png">
-                </div> -->
+                    <a class="next" onclick="plusSlides(1)">❯</a>
+                </div>
                 <!-- Imagem 2 -->
-                <div class="wallpaper">
+                <div class="wallpaper mySlides" id="foto2">
                     <a class="prev" onclick="plusSlides(-1)">❮</a>
                     <img src="./assets/desktop/wallpaper2.jpg">
                     <a class="next" onclick="plusSlides(1)">❯</a>
                 </div>
                 <!-- Imagem 3 -->
-                <!-- <div class="wallpaper">
+                <div class="wallpaper mySlides" id="foto3">
+                    <a class="prev" onclick="plusSlides(-1)">❮</a>
                     <img src="./assets/desktop/wallpaper3.jpg">
-                </div> -->
+                    <a class="next" onclick="plusSlides(1)">❯</a>
+                </div>
 
             </section>
 
@@ -94,5 +147,7 @@
 
 
     </div>
+
+    <script src="./script.js"></script>
 </body>
 </html>
