@@ -137,11 +137,31 @@
             </section>
 
             <section class="zoro-sola">
+                <h2>SORTEIE UM PERSONAGEM PARA VER SE O ZORO SOLA</h2>
                 <div class="zoro">
-                    <h2>SORTEIE UM PERSONAGEM PARA VER SE O ZORO SOLA</h2>
-                    <img src="./assets/desktop/zoro-duelista.png">
-                    <button id="btn-sortear">SORTEAR</button>
+                    <figure id="zoro-duelo">
+                        <img src="./assets/desktop/zoro-duelista.png">
+                    </figure>
+                    <div class="hide-char" id="duelo">
+                        <div id="zoro">
+                            <h2>Roronoa Zoro</h2>
+                            <figure>
+                                <img src="./assets/desktop/zoro-combat.png" alt="Zoro Combat">
+                            </figure>
+                            <div id="atributos">
+                                <h3 id="zcombate">Combate: 90</h3>
+                                <h3 id="zhaki">Haki: 50</h3>
+                                <h3 id="zestrategia">Estratégia: 70</h3>
+                                <h3 id="zdeterminacao">Determinação: 95</h3>
+                            </div>
+                        </div>
+                        <figure id="versus">
+                            <img src="./assets/desktop/versus.png" alt="versus">
+                        </figure>
+
+                    </div>
                 </div>
+                <button id="btn-sortear" onclick="sortear()">SORTEAR</button>
             </section>
         </div>
 

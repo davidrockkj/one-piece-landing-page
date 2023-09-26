@@ -397,19 +397,53 @@ body {
             padding: 0 56px;
         }
 
-            .zoro img {
+            .zoro #zoro-duelo {
+                display: flex;
+                justify-content: center;
+                width: 100%;
+                background: #ED4B03;
+            }
+
+            .zoro #zoro-duelo img {
                 width: 500px;
             }
 
+            .zoro #duelo {
+                display: flex;
+                justify-content: center;
+                /* justify-content: space-around; */
+                align-items: center;
+                height: 100%;
+                width: 100%;
+                background-color: green;
+                text-align: center;
+            }
+
+            #duelo img {
+                width: 300px;
+            }
+
+            #atributos {
+                text-align: end;
+                padding-right: 30px;
+                /* background-color: pink; */
+            }
+
+            #duelo #versus img {
+                width: 200px;
+                background-color: orange;
+            }
+
             
-            .zoro button#btn-sortear {
+            .zoro-sola button#btn-sortear {
                 background-color: var(--azul2)!important;
             }
 
-            .zoro button#btn-sortear:hover {
+            .zoro-sola button#btn-sortear:hover {
                 background-color: var(--azul3)!important;
+                cursor: pointer;
             }
 
-            .zoro button:focus{
+            .zoro-sola button:focus{
                 background-color: var(--azul3)!important;
             }

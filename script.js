@@ -13,7 +13,6 @@ let foto2 = document.getElementById('foto2');
 let foto3 = document.getElementById('foto3');
 
 
-
 // Parte em que pego o ID do personagem clicado para mostras as infos dele 
 function fecharDescricao() {
     if(personagem === 'zoro') {
@@ -67,7 +66,7 @@ usopp.addEventListener("click", function() {
 // ------------------------------------------------------------------------
 
 
-
+// SLIDE SHOW -------------------------------------------------------------
 let i = 1;
 let iFoto = 0;
 
@@ -102,15 +101,32 @@ function plusSlides(iFoto) {
         foto3.classList.add('mySlides');
     }
 }
+// ------------------------------------------------------------------------
 
-// function showSlides() {
-//   let i;
-//   let slides = document.getElementsByClassName("mySlides");
-//   for (i = 0; i < slides.length; i++) {
-//     slides[i].style.display = "none";
-//   }
-//   slideIndex++;
-//   if (slideIndex > slides.length) {slideIndex = 1}
-//   slides[slideIndex-1].style.display = "block";
-//   setTimeout(showSlides, 2000); // Change image every 2 seconds
-// }
+
+// SORTEIO ----------------------------------------------------------------
+const zoroAtt = {habilidade:'90', haki:'50', estrategia:'70', determinacao:'95'};
+const luffyAtt = {habilidade:'95', haki:'40', estrategia:'60', determinacao:'100'};
+const chopperAtt = {habilidade:'70', haki:'10', estrategia:'50', determinacao:'75'};
+const usoppAtt = {habilidade:'40', haki:'10', estrategia:'80', determinacao:'70'};
+const namiAtt = {habilidade:'20', haki:'10', estrategia:'85', determinacao:'60'};
+const sanjiAtt = {habilidade:'85', haki:'30', estrategia:'65', determinacao:'90'};
+
+const zoroDuelo = document.getElementById('zoro-duelo');
+const duelo = document.getElementById('duelo');
+const btnSortear = document.getElementById('btn-sortear');
+
+
+
+function sortear() {
+    zoroDuelo.classList.add('hide-char');
+    duelo.classList.remove('hide-char');
+
+    let nSorteado = Math.floor(Math.random() * 5) + 2;
+    
+    if (nSorteado === 2) {}
+    if (nSorteado === 3) {}
+    if (nSorteado === 4) {}
+    if (nSorteado === 5) {}
+    if (nSorteado === 6) {}
+};
